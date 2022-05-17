@@ -11,6 +11,10 @@
           <h2>purchuser: {{snack.purchuser}}  description: {{snack.description}}</h2>
           <h3>{{snack.get_absolute_url}}</h3>
 
+          <!-- <a href="{% url 'update_snack' snack.id %}" class="btn-get-started scrollto">Update this snack</a> -->
+          <a href="update/{{snack.id}}" class="btn-get-started scrollto">Update this snack</a>
+          <a href="{% url 'delete_snack' snack.id %}" class="btn-get-started scrollto">Delete this snack</a>
+
           <a href="{% url 'home' %}" class="btn-get-started scrollto">Go back to home</a>
         </div>
       </div>
